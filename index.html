@@ -1,127 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Responsive Layout</title>
-<style>
-*{
-    box-sizing: border-box;
-}   
-body {
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    font-family: serif;
-  }
 
-#header-nav {
-    margin: -8px;
-    background-color: #a09999;
-    border: 2px solid black;
-    height: 70px;
-    font-size: 25px;
-    padding-left: 20px;
-    padding-top: 20px;
-    
-  }
-h1 {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  span{
-    text-align: center;
-}
+<title>Module 3</title>
 
-.d0{
-    border: 0px;
-    background-color: #6b6868;
-    text-align: center;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-  }
-.d1{
-  border: 0px;
-  background-color: #6b6868;
-  text-align: center;
-  width: 100%;
-  font-family: 'Times New Roman', Times, serif;
-  color: rgb(0, 0, 0);
-}
-.d2{
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    background-color: #6b6868;
-    text-align: center;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-  }
-
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .d0{
-        width: 50%;
-        position: relative;
-    }
-
-    .d1{
-        margin-left: 450px;
-        margin-top: -200px;
-        width: 50%;
-    }
-
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* Home Page */
-    .d0{
-        width: 50%;
-    }
-
-    .d1{
-        margin-left: 450px;
-        margin-top: -200px;
-        width: 50%;
-    }
-  }
-	</style>
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
 <body>
-    <div id="header-nav">FOOD,CLL  </div>
-	<h1>Our Menu </h1>
-	<div class="row">
-		<div class="d0" class="col-md-4 col-sm-6 col-xs-12"><p id="nam1">Chicken </p><span>Borr set to some color of your choosing 
-		  Set the background color of each section title region to some unique color of your choosing Make sure 
-		  that the background color still allows the user to view the text in the section and section title regions.
-	      Create a single really tall section that will use the Bootstrap Grid and take up the entire width of the browser
-		   window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall,
-		    you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall 
-			enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color 
-			is set to distinguish it from the rest of the content. (Hint: don't forget to have an element with a class='container'
-			 or class='container-fluid' wrapping your grid. Remember that to have the grid do
-			  something "always", i.e., no matter what
-	  </span></div>
-		<div class="d1" class="col-md-4 col-sm-6 col-xs-12"><p id="nam2">Beef </p><span>Borr set to some color of your choosing 
-		  Set the background color of each section title region to some unique color of your choosing Make sure 
-		  that the background color still allows the user to view the text in the section and section title regions.
-		  window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall,
-		  you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall 
-		  enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color 
-		  is set to distinguish it from the rest of the content. (Hint: don't forget to have an element with a class='container'
-		   or class='container-fluid' wrapping your grid. Remember that to have the grid do
-			something "always", i.e., no matter what
-	  </span></div>
-		<div class="d2" class="col-md-4 col-sm-6 col-xs-12"><p id="nam3">Sushi </p><span>Borr set to some color of your choosing 
-		  Set the background color of each section title region to some unique color of your choosing Make sure 
-		  that the background color still allows the user to view the text in the section and section title regions.
-		  window (minus some margins, of course) for all views: desktop, tablet, and mobile. To make the section really tall,
-		  you can either fill it out with a LOT of text or simply set its height to something like 1000px. It needs to be tall 
-		  enough to cause scrolling down to be required to view the bottom of the section. Make sure its background color 
-		  is set to distinguish it from the rest of the content. (Hint: don't forget to have an element with a class='container'
-		   or class='container-fluid' wrapping your grid. Remember that to have the grid do
-			something "always", i.e., no matter what
-	  </span></div>
-	  
-	  </div>
+
+
+<nav class="navbar" id="top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
+    </div>
+
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a class="menu-item" href="#">Chicken</a></li>
+        <li><a class="menu-item" href="#">Beef</a></li> 
+        <li><a class="menu-item" href="#">Sushi</a></li> 
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<h1 class="main-title">Our Menu</h1>
+
+
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Chicken</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Beef</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="content-box">
+      <p class="item-name">Sushi</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#top">(Back to Top)</a></p>
+    </div>
+  </div>
+
+</div>
 
 
 </body>
