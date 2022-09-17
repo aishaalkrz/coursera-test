@@ -1,78 +1,94 @@
 
-*{
-    box-sizing: border-box;
-}   
-body {
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    font-family: serif;
-  }
-
-#header-nav {
-    margin: -8px;
-    background-color: #a09999;
-    border: 2px solid black;
-    height: 70px;
-    font-size: 25px;
-    padding-left: 20px;
-    padding-top: 20px;
-    
-  }
-h1 {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  span{
-    text-align: center;
+.container-fluid{
+	margin: 0;
+	padding: 0;
 }
 
-.d0{
-    border: 0px;
-    background-color: #6b6868;
-    text-align: center;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-  }
-.d1{
-  border: 0px;
-  background-color: #6b6868;
+.navbar{
+	border-radius: 0px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.navbar-brand{
+  font-size: 35px;
+  color: white;
+  padding-left: 25px;
+}
+
+.navbar-brand:hover{
+	color: white;
+}
+
+.nav{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav{
+  font-size: 25px;
   text-align: center;
-  width: 100%;
-  font-family: 'Times New Roman', Times, serif;
-  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
 }
-.d2{
 
-    background-color: #6b6868;
-    text-align: center;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-  }
+.navbar-toggle{
+	border: 2px solid white;
+	margin-right: 25px;
+}
 
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .d0{
-        width: 50%;
-        position: relative;
-    }
+.icon-bar{
+	background-color: white;
+}
 
-    .d1{
-        margin-left: 450px;
-        margin-top: -200px;
-        width: 50%;
-    }
 
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* Home Page */
-    .d0{
-        width: 50%;
-    }
+.main-title{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #000000;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 
-    .d1{
-        margin-left: 450px;
-        margin-top: -200px;
-        width: 50%;
-    }
-  }
+li{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.menu-item{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	color: black;
+	display: block;
+}
+
+.menu-item:hover{
+	background-color: rgba(0,0,0,0.9);
+	color: rgba(0,0,0,0.4);
+}
+
+
+
+.row{
+	margin: 20px;
+}
+
+.content-box{
+	margin: 20px;
+	width: auto;
+	height: auto;
+	color: black;
+	background-color: rgba(0,0,0,0.2);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	padding: 20px;
+}
+
+.item-name{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
