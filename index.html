@@ -5,7 +5,85 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
 <title>Responsive Layout</title>
+<style>
+*{
+    box-sizing: border-box;
+}   
+body {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: serif;
+  }
 
+#header-nav {
+    margin: -8px;
+    background-color: #a09999;
+    border: 2px solid black;
+    height: 70px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+  }
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  span{
+    text-align: center;
+}
+
+.d0{
+    border: 0px;
+    background-color: #6b6868;
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+  }
+.d1{
+  border: 0px;
+  background-color: #6b6868;
+  text-align: center;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(0, 0, 0);
+}
+.d2{
+
+    background-color: #6b6868;
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .d0{
+        width: 50%;
+        position: relative;
+    }
+
+    .d1{
+        margin-left: 450px;
+        margin-top: -200px;
+        width: 50%;
+    }
+
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    .d0{
+        width: 50%;
+    }
+
+    .d1{
+        margin-left: 450px;
+        margin-top: -200px;
+        width: 50%;
+    }
+  }
+	</style>
 </head>
 <body>
     <div id="header-nav">FOOD,CLL  </div>
